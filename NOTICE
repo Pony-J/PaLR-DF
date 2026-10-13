@@ -1,0 +1,14 @@
+PaLR-DF research release, 2026.
+Authors: Yuanjin Bao, Jifei Tang, Lanhua Xia.
+
+This standalone release was extracted from satellite-clock experiment code
+developed in a Time-Series-Library workspace. The upstream project's MIT
+notice, Copyright (c) 2021 THUML @ Tsinghua University, is retained in
+licenses/Time-Series-Library.txt. The release does not bundle the general
+Time-Series-Library model zoo or its datasets.
+
+The local direct forecasting comparison adapters are identified in
+docs/protocol.md and must not be described as official upstream implementations.
+
+CODE/IGS clock products retain their provider attribution and data terms;
+see DATA_LICENSE.md. Software licensing does not alter those terms.

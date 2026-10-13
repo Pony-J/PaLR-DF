@@ -1,0 +1,76 @@
+{
+  "protocol_id": "DTD-CODE2024-GAPSAFE-V1",
+  "sampling_seconds": 30,
+  "input_length": 5760,
+  "prediction_length": 2880,
+  "training_stride": 240,
+  "validation_stride": 240,
+  "satellites": [
+    "C06",
+    "C09",
+    "C10",
+    "C11",
+    "C14",
+    "C19",
+    "C20",
+    "C21",
+    "C22",
+    "C24",
+    "C25",
+    "C26",
+    "C27",
+    "C28",
+    "C29",
+    "C30",
+    "C32",
+    "C33",
+    "C34",
+    "C35",
+    "C36",
+    "C37",
+    "C39",
+    "C41",
+    "C42",
+    "C44",
+    "C45",
+    "C46"
+  ],
+  "train_target_intervals": [
+    [
+      "2024-01-03",
+      "2024-01-11"
+    ],
+    [
+      "2024-01-18",
+      "2024-01-24"
+    ]
+  ],
+  "validation_target_intervals": [
+    [
+      "2024-01-27",
+      "2024-01-31"
+    ]
+  ],
+  "model": {
+    "name": "informer_direct_approx",
+    "patch_size": 12,
+    "d_model": 48,
+    "attention_heads": 4,
+    "layers": 2,
+    "feedforward_dim": 192,
+    "dropout": 0.1
+  },
+  "training": {
+    "batch_size": 8,
+    "learning_rate": 0.0003,
+    "max_epochs": 150,
+    "early_stopping_patience": 20,
+    "difference_loss_weight": 1.0,
+    "clock_loss_weight": 1.0,
+    "endpoint_loss_weight": 0.1,
+    "gradient_clip_norm": 1.0,
+    "seed": 2024
+  },
+  "evaluation_role": "checkpoint_selection_and_reported_development_evaluation",
+  "original_config_sha256": "bdf835025c5e8fc9a79174fb7d3e91d9d7e9b987e974785d18e35a5b2414c80e"
+}

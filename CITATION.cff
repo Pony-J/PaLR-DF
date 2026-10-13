@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "Please cite the accompanying manuscript and credit CODE/IGS data providers."
+type: software
+title: "PaLR-DF: Persistence-augmented low-rank direct forecasting"
+version: 0.1.0
+date-released: 2026-10-13
+license: MIT
+authors:
+  - family-names: Bao
+    given-names: Yuanjin
+  - family-names: Tang
+    given-names: Jifei
+  - family-names: Xia
+    given-names: Lanhua
+preferred-citation:
+  type: unpublished
+  title: "Long-Horizon Satellite Clock Bias Prediction: From Mapping Redundancy to Low-Rank Decoding"
+  authors:
+    - family-names: Bao
+      given-names: Yuanjin
+    - family-names: Tang
+      given-names: Jifei
+    - family-names: Xia
+      given-names: Lanhua
+  year: 2026
+  notes: "Manuscript."

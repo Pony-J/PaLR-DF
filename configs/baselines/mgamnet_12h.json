@@ -1,0 +1,85 @@
+{
+  "protocol_id": "DTD-CODE2024-GAPSAFE-V1-MGAMNET-P0",
+  "sampling_seconds": 30,
+  "input_length": 5760,
+  "prediction_length": 1440,
+  "training_stride": 240,
+  "validation_stride": 240,
+  "satellites": [
+    "C06",
+    "C09",
+    "C10",
+    "C11",
+    "C14",
+    "C19",
+    "C20",
+    "C21",
+    "C22",
+    "C24",
+    "C25",
+    "C26",
+    "C27",
+    "C28",
+    "C29",
+    "C30",
+    "C32",
+    "C33",
+    "C34",
+    "C35",
+    "C36",
+    "C37",
+    "C39",
+    "C41",
+    "C42",
+    "C44",
+    "C45",
+    "C46"
+  ],
+  "train_target_intervals": [
+    [
+      "2024-01-03",
+      "2024-01-11"
+    ],
+    [
+      "2024-01-14",
+      "2024-01-15"
+    ],
+    [
+      "2024-01-18",
+      "2024-01-24"
+    ]
+  ],
+  "validation_target_intervals": [
+    [
+      "2024-01-27",
+      "2024-01-31"
+    ]
+  ],
+  "model": {
+    "name": "mgamnet_direct_approx",
+    "patch_sizes": [
+      12,
+      60,
+      120
+    ],
+    "d_model": 32,
+    "attention_heads": 4,
+    "layers": 2,
+    "feedforward_dim": 128,
+    "pooled_tokens": 8,
+    "dropout": 0.1
+  },
+  "training": {
+    "batch_size": 8,
+    "learning_rate": 0.0003,
+    "max_epochs": 80,
+    "early_stopping_patience": 15,
+    "difference_loss_weight": 1.0,
+    "clock_loss_weight": 1.0,
+    "endpoint_loss_weight": 0.1,
+    "gradient_clip_norm": 1.0,
+    "seed": 2024
+  },
+  "evaluation_role": "checkpoint_selection_and_reported_development_evaluation",
+  "original_config_sha256": "86227b1aeaeb12486f9e4a85cc6847f99d52a73c7cc354a2195fdd823b3d581f"
+}

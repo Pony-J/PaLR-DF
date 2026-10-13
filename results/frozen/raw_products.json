@@ -1,0 +1,280 @@
+{
+  "provider": "CODE (AIUB)",
+  "mirror_host": "igs.ign.fr",
+  "reference_doi": "10.48350/185742",
+  "time_system": "GPS",
+  "sampling_seconds": 30,
+  "transformation": "AS clock bias seconds multiplied by 1e9; selected satellites only; no interpolation or imputation",
+  "rows": [
+    {
+      "date": "2024-01-01",
+      "gps_week": 2295,
+      "remote": "/pub/igs/products/2295/COD0MGXFIN_20240010000_01D_30S_CLK.CLK.gz",
+      "sha256": "4629534e6866fd1d9d9832b1447e89b9a5bf728cbd53a20f51a2e153d187ff42",
+      "gzip_sha256": "174bb47bf0f1075a0e25919d73b937954edf9340a2f6850c2604e64807a1e942",
+      "bytes": 36400027,
+      "gzip_bytes": 5173044,
+      "filename": "COD0MGXFIN_20240010000_01D_30S_CLK.CLK"
+    },
+    {
+      "date": "2024-01-02",
+      "gps_week": 2295,
+      "remote": "/pub/igs/products/2295/COD0MGXFIN_20240020000_01D_30S_CLK.CLK.gz",
+      "sha256": "3fb14f71bb0efb9581ad722c5a0f189b15f2df06e824ce21326bb7c5852f7e35",
+      "gzip_sha256": "c44c6cff0ab60c38d00995268604a72001aae0c7f35d3a620362514e65167e78",
+      "bytes": 36153484,
+      "gzip_bytes": 5136599,
+      "filename": "COD0MGXFIN_20240020000_01D_30S_CLK.CLK"
+    },
+    {
+      "date": "2024-01-03",
+      "gps_week": 2295,
+      "remote": "/pub/igs/products/2295/COD0MGXFIN_20240030000_01D_30S_CLK.CLK.gz",
+      "sha256": "925381e4dad01463f2d698c7254041fc658d5317c3c2c41cec1a6332add8fdfe",
+      "gzip_sha256": "d2b0f52564131bf0d165b837bcd99c3938911699be29cdb0b48a350737935951",
+      "bytes": 36424519,
+      "gzip_bytes": 5175662,
+      "filename": "COD0MGXFIN_20240030000_01D_30S_CLK.CLK"
+    },
+    {
+      "date": "2024-01-04",
+      "gps_week": 2295,
+      "remote": "/pub/igs/products/2295/COD0MGXFIN_20240040000_01D_30S_CLK.CLK.gz",
+      "sha256": "c29eab87d233e3fd0812950778ad1fc26a3d7b856deff5670943b198ab229f9c",
+      "gzip_sha256": "9df28c29ec34c77a6f05923effd70625ed49de2e59538f17a18a512dff63e822",
+      "bytes": 36441904,
+      "gzip_bytes": 5189238,
+      "filename": "COD0MGXFIN_20240040000_01D_30S_CLK.CLK"
+    },
+    {
+      "date": "2024-01-05",
+      "gps_week": 2295,
+      "remote": "/pub/igs/products/2295/COD0MGXFIN_20240050000_01D_30S_CLK.CLK.gz",
+      "sha256": "5400c0cf80ad48208fafa64dadb69f6fb523f5f88409e5c3e47bcd1571e5e1f2",
+      "gzip_sha256": "cc8c5a014a4690d9eb84559ea21006c5400098f57433b7dd96b9cb4e63109a0d",
+      "bytes": 36208566,
+      "gzip_bytes": 5157529,
+      "filename": "COD0MGXFIN_20240050000_01D_30S_CLK.CLK"
+    },
+    {
+      "date": "2024-01-06",
+      "gps_week": 2295,
+      "remote": "/pub/igs/products/2295/COD0MGXFIN_20240060000_01D_30S_CLK.CLK.gz",
+      "sha256": "d0e1d9170225cd17226e7b651d5cf51e9c3200332c524943ae97812d1250a4d8",
+      "gzip_sha256": "b6fcf5ccef62b011a59cc2efec2cd656bd3107f8de06004fef596fd8483ab718",
+      "bytes": 36203255,
+      "gzip_bytes": 5158495,
+      "filename": "COD0MGXFIN_20240060000_01D_30S_CLK.CLK"
+    },
+    {
+      "date": "2024-01-07",
+      "gps_week": 2296,
+      "remote": "/pub/igs/products/2296/COD0MGXFIN_20240070000_01D_30S_CLK.CLK.gz",
+      "sha256": "ab243a58ee7be90cc473304d373fc280540ed6247dbc576691becd1e27c4a27a",
+      "gzip_sha256": "3875eafed225aeceb8e717a99ba8def09dbb156d17f7b37bf6954c1d68060822",
+      "bytes": 36152163,
+      "gzip_bytes": 5150703,
+      "filename": "COD0MGXFIN_20240070000_01D_30S_CLK.CLK"
+    },
+    {
+      "date": "2024-01-08",
+      "gps_week": 2296,
+      "remote": "/pub/igs/products/2296/COD0MGXFIN_20240080000_01D_30S_CLK.CLK.gz",
+      "sha256": "5a5b06e7d182540b195d1d2b39f1f7df5aac35b4c8dcfec5b20ffff3a52a472c",
+      "gzip_sha256": "0d3fe4fc3fabb2f3635ab27df92017a97031a8a0ee2be4f7b0b86dfc9512c931",
+      "bytes": 36127653,
+      "gzip_bytes": 5139851,
+      "filename": "COD0MGXFIN_20240080000_01D_30S_CLK.CLK"
+    },
+    {
+      "date": "2024-01-09",
+      "gps_week": 2296,
+      "remote": "/pub/igs/products/2296/COD0MGXFIN_20240090000_01D_30S_CLK.CLK.gz",
+      "sha256": "effadb335405b868df25332bab68985fb73e1460735caa8c5983e7eb4a522790",
+      "gzip_sha256": "b3669f0324512e54e242ac21e8f3094e52b2b18d42c4ccec05dbfc347de4f2ad",
+      "bytes": 36149969,
+      "gzip_bytes": 5149527,
+      "filename": "COD0MGXFIN_20240090000_01D_30S_CLK.CLK"
+    },
+    {
+      "date": "2024-01-10",
+      "gps_week": 2296,
+      "remote": "/pub/igs/products/2296/COD0MGXFIN_20240100000_01D_30S_CLK.CLK.gz",
+      "sha256": "9e20694195eacdcf3c86aba372db90dcbfe77f25df0491e34ca83410e3d699ee",
+      "gzip_sha256": "f9bafbf90a00cc70a7998ba9c77f67fc4f8b45321231b30a824613993e4ee936",
+      "bytes": 36095371,
+      "gzip_bytes": 5135373,
+      "filename": "COD0MGXFIN_20240100000_01D_30S_CLK.CLK"
+    },
+    {
+      "date": "2024-01-12",
+      "gps_week": 2296,
+      "remote": "/pub/igs/products/2296/COD0MGXFIN_20240120000_01D_30S_CLK.CLK.gz",
+      "sha256": "d350f1781b68c803314c322c37ffdfeb6a29793bae85a965a89a1b1202f6d252",
+      "gzip_sha256": "ef840693bf84a0326767d74f62208efde9981c685e185702783857a983af2af8",
+      "bytes": 36011988,
+      "gzip_bytes": 5117558,
+      "filename": "COD0MGXFIN_20240120000_01D_30S_CLK.CLK"
+    },
+    {
+      "date": "2024-01-13",
+      "gps_week": 2296,
+      "remote": "/pub/igs/products/2296/COD0MGXFIN_20240130000_01D_30S_CLK.CLK.gz",
+      "sha256": "3f9539f19f9609e4ad547739e08eff5c0a8d7d8d6b3b6d4604e8e9a8f75edc72",
+      "gzip_sha256": "30744b2e1cfa25c6b9c434fdb2fbb21b43e482ab1e9e340f96ddd63c1d88e34e",
+      "bytes": 36315124,
+      "gzip_bytes": 5161299,
+      "filename": "COD0MGXFIN_20240130000_01D_30S_CLK.CLK"
+    },
+    {
+      "date": "2024-01-14",
+      "gps_week": 2297,
+      "remote": "/pub/igs/products/2297/COD0MGXFIN_20240140000_01D_30S_CLK.CLK.gz",
+      "sha256": "ecfbd3e92feec7c7ccdfd4559a508e2990c932d7543b4440f59d645a291449e4",
+      "gzip_sha256": "020489bf2fad9f09786d64f71d8313e3b9af272e89da21438c20d4a0d9565b97",
+      "bytes": 36451951,
+      "gzip_bytes": 5169939,
+      "filename": "COD0MGXFIN_20240140000_01D_30S_CLK.CLK"
+    },
+    {
+      "date": "2024-01-16",
+      "gps_week": 2297,
+      "remote": "/pub/igs/products/2297/COD0MGXFIN_20240160000_01D_30S_CLK.CLK.gz",
+      "sha256": "f2d98941490af0f48e8602911da524771e89bee32e07467658baf799f36f2c68",
+      "gzip_sha256": "6eae78f84a861c838dd46b044547cc6776a82c553e724e94e03eafcc0e3d7002",
+      "bytes": 36584924,
+      "gzip_bytes": 5196316,
+      "filename": "COD0MGXFIN_20240160000_01D_30S_CLK.CLK"
+    },
+    {
+      "date": "2024-01-17",
+      "gps_week": 2297,
+      "remote": "/pub/igs/products/2297/COD0MGXFIN_20240170000_01D_30S_CLK.CLK.gz",
+      "sha256": "33e83b31b04260cc603b493faa3e99132ca56d140186bb986510b038c3034933",
+      "gzip_sha256": "d348666f2cfd93392332e1584593a58600258e5e8b9933448f8a782c26901f33",
+      "bytes": 36539134,
+      "gzip_bytes": 5197644,
+      "filename": "COD0MGXFIN_20240170000_01D_30S_CLK.CLK"
+    },
+    {
+      "date": "2024-01-18",
+      "gps_week": 2297,
+      "remote": "/pub/igs/products/2297/COD0MGXFIN_20240180000_01D_30S_CLK.CLK.gz",
+      "sha256": "556a22880d1763d3a418b9297d4b6bc3659ba93a20ce7ce210bc696ff8ddab01",
+      "gzip_sha256": "2ee07a42d1b01d2f80af05314154d61f557b621239a37673bce32648a1c7ebdc",
+      "bytes": 36608647,
+      "gzip_bytes": 5211531,
+      "filename": "COD0MGXFIN_20240180000_01D_30S_CLK.CLK"
+    },
+    {
+      "date": "2024-01-19",
+      "gps_week": 2297,
+      "remote": "/pub/igs/products/2297/COD0MGXFIN_20240190000_01D_30S_CLK.CLK.gz",
+      "sha256": "1f6eef479d4ac417c75926de16c7db11833437e354333b6ace139b7a7b2c9b43",
+      "gzip_sha256": "ee67218fa501b13ec79d93971166836da5a176b866b26240762bfddd90d466ba",
+      "bytes": 36527431,
+      "gzip_bytes": 5191795,
+      "filename": "COD0MGXFIN_20240190000_01D_30S_CLK.CLK"
+    },
+    {
+      "date": "2024-01-20",
+      "gps_week": 2297,
+      "remote": "/pub/igs/products/2297/COD0MGXFIN_20240200000_01D_30S_CLK.CLK.gz",
+      "sha256": "cac22a8634119390f9eb5bca40b887eacb2047e0c8f629abb0c9ff4e9ac7131c",
+      "gzip_sha256": "9196c94a63185685126a6624a9de6fa8ef2a216ebc4cf3413413ec7e1f34ec55",
+      "bytes": 36406134,
+      "gzip_bytes": 5170263,
+      "filename": "COD0MGXFIN_20240200000_01D_30S_CLK.CLK"
+    },
+    {
+      "date": "2024-01-21",
+      "gps_week": 2298,
+      "remote": "/pub/igs/products/2298/COD0MGXFIN_20240210000_01D_30S_CLK.CLK.gz",
+      "sha256": "f0e2073bb48543d3663cccbf6942fe7994dd67e2a8d63bcf55888f4bb2ac08e4",
+      "gzip_sha256": "6f4e6d617ce311e986cbaee86c862e2877a78e08ef3d118323662dabe042ab72",
+      "bytes": 36704208,
+      "gzip_bytes": 5217374,
+      "filename": "COD0MGXFIN_20240210000_01D_30S_CLK.CLK"
+    },
+    {
+      "date": "2024-01-22",
+      "gps_week": 2298,
+      "remote": "/pub/igs/products/2298/COD0MGXFIN_20240220000_01D_30S_CLK.CLK.gz",
+      "sha256": "7cf22fb37a2068f8cbf0130771c4d81ef02bcf01598a7a973b93dcac9ff1d4a9",
+      "gzip_sha256": "9a0f33a6c48be4331ac1fb5fcb57b280e84b6dfbdd363e77e1df9d5f0a0dea98",
+      "bytes": 36621110,
+      "gzip_bytes": 5207867,
+      "filename": "COD0MGXFIN_20240220000_01D_30S_CLK.CLK"
+    },
+    {
+      "date": "2024-01-23",
+      "gps_week": 2298,
+      "remote": "/pub/igs/products/2298/COD0MGXFIN_20240230000_01D_30S_CLK.CLK.gz",
+      "sha256": "2baeff4aeed6379fd5e815ffeceff14f0c1c83875a4902f1ba3741fbb7fa3bef",
+      "gzip_sha256": "3aee5c6ffb9c14f26ea7831675890385eeb39a1012d945d8a8ae9c8664b02d66",
+      "bytes": 36632121,
+      "gzip_bytes": 5204923,
+      "filename": "COD0MGXFIN_20240230000_01D_30S_CLK.CLK"
+    },
+    {
+      "date": "2024-01-25",
+      "gps_week": 2298,
+      "remote": "/pub/igs/products/2298/COD0MGXFIN_20240250000_01D_30S_CLK.CLK.gz",
+      "sha256": "7a79035db7d4621e1ac1a845ff6b73a1855b543ae97cb35b2630855a614636ee",
+      "gzip_sha256": "594b427d75f1f46976288b3a79c5af0af57478720015b5f715ce6a338c43c4ee",
+      "bytes": 36639436,
+      "gzip_bytes": 5203717,
+      "filename": "COD0MGXFIN_20240250000_01D_30S_CLK.CLK"
+    },
+    {
+      "date": "2024-01-26",
+      "gps_week": 2298,
+      "remote": "/pub/igs/products/2298/COD0MGXFIN_20240260000_01D_30S_CLK.CLK.gz",
+      "sha256": "4c5e8c2306f85423fee4d4b51e75a66ca4daed9ffce0036509e1c4480c46b00d",
+      "gzip_sha256": "ad2faefac1f31051589c1be656ed41b3bd816a3b72dcd4d1557c3afa2cbd344b",
+      "bytes": 36620635,
+      "gzip_bytes": 5194422,
+      "filename": "COD0MGXFIN_20240260000_01D_30S_CLK.CLK"
+    },
+    {
+      "date": "2024-01-27",
+      "gps_week": 2298,
+      "remote": "/pub/igs/products/2298/COD0MGXFIN_20240270000_01D_30S_CLK.CLK.gz",
+      "sha256": "271c5b7cc169cf9c5968e8c81251552983835d8e3f47f52ef86da4af2004d781",
+      "gzip_sha256": "6a7c8e9063bfd2d7af81cf9a794fc4665bed1b01fcb71eebd249c52ff56b5729",
+      "bytes": 36634496,
+      "gzip_bytes": 5198378,
+      "filename": "COD0MGXFIN_20240270000_01D_30S_CLK.CLK"
+    },
+    {
+      "date": "2024-01-28",
+      "gps_week": 2299,
+      "remote": "/pub/igs/products/2299/COD0MGXFIN_20240280000_01D_30S_CLK.CLK.gz",
+      "sha256": "598071eaa73e2a7a53cdfbec626b65d5772a99766b20ed7e06048440dbf02bf1",
+      "gzip_sha256": "ad4886f286b95d4dafeb800c84f882f1c5373dcf003dbeb6000d00a2bb37a216",
+      "bytes": 36620540,
+      "gzip_bytes": 5200824,
+      "filename": "COD0MGXFIN_20240280000_01D_30S_CLK.CLK"
+    },
+    {
+      "date": "2024-01-29",
+      "gps_week": 2299,
+      "remote": "/pub/igs/products/2299/COD0MGXFIN_20240290000_01D_30S_CLK.CLK.gz",
+      "sha256": "99168bd88322c0817d751cc163c9cc290532638349f009efb457933b54c66052",
+      "gzip_sha256": "be0d428d06cf876c033cc7810c16716529c2d60b8c5e12597f278adbc0ab54af",
+      "bytes": 36709356,
+      "gzip_bytes": 5210074,
+      "filename": "COD0MGXFIN_20240290000_01D_30S_CLK.CLK"
+    },
+    {
+      "date": "2024-01-30",
+      "gps_week": 2299,
+      "remote": "/pub/igs/products/2299/COD0MGXFIN_20240300000_01D_30S_CLK.CLK.gz",
+      "sha256": "42fc40d58c68e8baca29d698c2777fdf561e3cf31164878acbe4fda61c6b31fb",
+      "gzip_sha256": "84e8d96a0c33ccd8eb2c5a1e4782ef152ca0ea0d6615674e96f83d738c5065d1",
+      "bytes": 36916076,
+      "gzip_bytes": 5247509,
+      "filename": "COD0MGXFIN_20240300000_01D_30S_CLK.CLK"
+    }
+  ]
+}

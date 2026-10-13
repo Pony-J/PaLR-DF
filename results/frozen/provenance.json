@@ -1,0 +1,53 @@
+{
+  "legacy_model_source_sha256": "5778ebcc6855d369b42ccfd8c1d1060eab89688a4a704551bd6514f5015a6905",
+  "extracted_classes": [
+    "DTDNetLightV2",
+    "MultiScaleConv1d",
+    "Periodic2DEncoder"
+  ],
+  "release_version": "0.1.0",
+  "scope": "first-paper core method, spectra, rank interventions and comparisons",
+  "satellites": [
+    "C06",
+    "C09",
+    "C10",
+    "C11",
+    "C14",
+    "C19",
+    "C20",
+    "C21",
+    "C22",
+    "C24",
+    "C25",
+    "C26",
+    "C27",
+    "C28",
+    "C29",
+    "C30",
+    "C32",
+    "C33",
+    "C34",
+    "C35",
+    "C36",
+    "C37",
+    "C39",
+    "C41",
+    "C42",
+    "C44",
+    "C45",
+    "C46"
+  ],
+  "seeds": [
+    2024,
+    2025,
+    2026,
+    2027,
+    2028
+  ],
+  "raw_day_count": 27,
+  "checkpoint_count": 560,
+  "comparison_rows": 2520,
+  "rank_rows": 1400,
+  "spectral_rows": 560,
+  "original_spectral_table_sha256": "4bb0ce077c8d2983122aed7024b08ef4cc27bf13d9120cb1f5a89d0d5af59009"
+}

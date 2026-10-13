@@ -1,0 +1,107 @@
+{
+  "release": "0.1.0",
+  "checked_date": "2026-10-13",
+  "passed": true,
+  "runtime": {
+    "python": "3.11.10",
+    "torch": "2.5.1",
+    "cuda": "11.8",
+    "gpu": "NVIDIA GeForce RTX 4070 SUPER",
+    "cpu_threads": 4
+  },
+  "frozen_aggregation": {
+    "passed": true,
+    "verified_files": 14,
+    "bytes": 1356923,
+    "comparison_rows": 2520,
+    "rank_rows": 1400,
+    "spectral_rows": 560,
+    "max_reference_error_ns": 2.220446049250313e-16,
+    "satellite_count": 28,
+    "seeds": [
+      2024,
+      2025,
+      2026,
+      2027,
+      2028
+    ]
+  },
+  "assets": {
+    "verified_files": 582,
+    "bytes": 273887953
+  },
+  "cpu_archival_replay": {
+    "checkpoint_count": 560,
+    "max_reference_error_ns": 0.000129597658792,
+    "atol_ns": 0.0002,
+    "passed": true
+  },
+  "cuda_archival_replay": {
+    "passed": true,
+    "checkpoint_count": 560,
+    "max_reference_error_ns": 4.440892098500626e-16,
+    "atol_ns": 1e-06,
+    "wall_seconds": 9.25,
+    "torch": "2.5.1",
+    "cuda": "11.8",
+    "gpu": "NVIDIA GeForce RTX 4070 SUPER"
+  },
+  "legacy_forward_equivalence": {
+    "cases": 12,
+    "max_difference_ns": 0.0,
+    "passed": true
+  },
+  "legacy_window_equivalence": {
+    "cases": 12,
+    "array_identity": true,
+    "passed": true
+  },
+  "spectral_recomputation": {
+    "cases": 12,
+    "r95_matches": true,
+    "passed": true
+  },
+  "one_epoch_training_parity": {
+    "satellite": "C29",
+    "actual_satellites": [
+      "C29"
+    ],
+    "epochs": 1,
+    "run_kind": "implementation_smoke",
+    "max_selected_state_difference": 0.0,
+    "max_training_history_difference": 0.0,
+    "best_epoch": 0,
+    "history": [
+      {
+        "epoch": 1,
+        "train_loss": 0.5510537477187168,
+        "validation_rmse_ns": 0.4872548075142332
+      }
+    ],
+    "passed": true
+  },
+  "raw_to_processed_rebuild": {
+    "days": 27,
+    "satellites": 28,
+    "epochs": 77760,
+    "all_arrays_identical": true,
+    "passed": true
+  },
+  "scope": "Release implementation and archival reproducibility checks; no new scientific comparison is substituted for paper results.",
+  "cpu_tests": {
+    "passed": true,
+    "test_count": 12
+  },
+  "citation_schema": {
+    "passed": true,
+    "format": "CFF 1.2.0",
+    "schema_source": "https://raw.githubusercontent.com/citation-file-format/citation-file-format/main/schema.json"
+  },
+  "package_installation": {
+    "wheel_built": true,
+    "isolated_environment_installed": true,
+    "table_command_passed": true,
+    "replay_command_passed": true,
+    "spectrum_command_passed": true
+  }
+}

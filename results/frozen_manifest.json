@@ -1,0 +1,75 @@
+{
+  "version": "0.1.0",
+  "files": [
+    {
+      "path": "results/frozen/assets_manifest.json",
+      "bytes": 100533,
+      "sha256": "0deebdddbc5fae832f7e51770e2fc5967e8073d7494190226d73a11f80569266"
+    },
+    {
+      "path": "results/frozen/c41_daily.csv",
+      "bytes": 198,
+      "sha256": "90be6f8f6430a7e877c1bd06fc9c6cfdef9d8537432fbba3c1a412fa876c2493"
+    },
+    {
+      "path": "results/frozen/checkpoint_index.json",
+      "bytes": 212243,
+      "sha256": "63f6ca165abfe6a4edad9b9cccca6bfda32e7445a67705e6a1ef7f0a7539a073"
+    },
+    {
+      "path": "results/frozen/comparison.csv",
+      "bytes": 425791,
+      "sha256": "53cd37db3260c269d370ed29a34158bda89562af8b84afad1d8f21f8484b42de"
+    },
+    {
+      "path": "results/frozen/complexity_points.csv",
+      "bytes": 557,
+      "sha256": "c80ddf6533a007b99d6eb9055ef074a5f3207377ca833aa40569c377b7440dcf"
+    },
+    {
+      "path": "results/frozen/paired_12h_with_MGAMNet.csv",
+      "bytes": 929,
+      "sha256": "89bb3753a924ea740c6faf3ffd295573509d1e6537e5a71e2007f5bb0c1dc088"
+    },
+    {
+      "path": "results/frozen/paper_reference.csv",
+      "bytes": 974,
+      "sha256": "d699161901333cb4bade7b4b14110c51d5dca87b8ba4743d16cd608be027b686"
+    },
+    {
+      "path": "results/frozen/provenance.json",
+      "bytes": 938,
+      "sha256": "f9d06b2ac202e6e1b284a5406d00cc50378d47c4a76783884d2b18380deb062a"
+    },
+    {
+      "path": "results/frozen/rank_intervention.csv",
+      "bytes": 147357,
+      "sha256": "be513e33d966a38844444c560a60713bcae8e4f81ea5111ccec0a3957b6a01a1"
+    },
+    {
+      "path": "results/frozen/rank_reference_3seed.csv",
+      "bytes": 569,
+      "sha256": "7d1f333d6d3701d94e11e7b43b62401159c2464d75570535e31b2c0352eb2f86"
+    },
+    {
+      "path": "results/frozen/rank_reference_5seed.csv",
+      "bytes": 347,
+      "sha256": "a6f49836b3664e074bd16823d79224719bd7e6d411441e70d09310c7b6dace6e"
+    },
+    {
+      "path": "results/frozen/raw_products.json",
+      "bytes": 12033,
+      "sha256": "ded4ea02e6cf5b74704ea46f1fb1c516e8d17617a7c7a78b2569276490bbf91d"
+    },
+    {
+      "path": "results/frozen/satellite_differences.csv",
+      "bytes": 2846,
+      "sha256": "c63cda2e3c35d252e0fa7785645d52abc36878e1c7127da500be415cb576009b"
+    },
+    {
+      "path": "results/frozen/spectra.csv",
+      "bytes": 451608,
+      "sha256": "ca854cf95302a26ce2bca8d1c9de03f46181799482166abc4195f65705254235"
+    }
+  ]
+}

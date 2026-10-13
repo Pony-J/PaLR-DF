@@ -1,0 +1,83 @@
+{
+  "protocol_id": "DTD-CODE2024-GAPSAFE-V1",
+  "sampling_seconds": 30,
+  "input_length": 5760,
+  "prediction_length": 1440,
+  "training_stride": 240,
+  "validation_stride": 240,
+  "satellites": [
+    "C06",
+    "C09",
+    "C10",
+    "C11",
+    "C14",
+    "C19",
+    "C20",
+    "C21",
+    "C22",
+    "C24",
+    "C25",
+    "C26",
+    "C27",
+    "C28",
+    "C29",
+    "C30",
+    "C32",
+    "C33",
+    "C34",
+    "C35",
+    "C36",
+    "C37",
+    "C39",
+    "C41",
+    "C42",
+    "C44",
+    "C45",
+    "C46"
+  ],
+  "train_target_intervals": [
+    [
+      "2024-01-03",
+      "2024-01-11"
+    ],
+    [
+      "2024-01-14",
+      "2024-01-15"
+    ],
+    [
+      "2024-01-18",
+      "2024-01-24"
+    ]
+  ],
+  "validation_target_intervals": [
+    [
+      "2024-01-27",
+      "2024-01-31"
+    ]
+  ],
+  "model": {
+    "name": "v2",
+    "slow_pool": 24,
+    "fast_length": 240,
+    "channels": 48,
+    "fusion_dim": 128,
+    "attention_heads": 4,
+    "pooled_tokens": 16,
+    "basis_count": 48,
+    "dropout": 0.1,
+    "use_trend_anchor": false
+  },
+  "training": {
+    "batch_size": 8,
+    "learning_rate": 0.001,
+    "max_epochs": 100,
+    "early_stopping_patience": 15,
+    "difference_loss_weight": 1.0,
+    "clock_loss_weight": 1.0,
+    "endpoint_loss_weight": 0.1,
+    "gradient_clip_norm": 1.0,
+    "seed": 2024,
+    "shape_basis_initialization": "random"
+  },
+  "evaluation_role": "checkpoint_selection_and_reported_development_evaluation"
+}

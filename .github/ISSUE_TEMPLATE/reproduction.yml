@@ -1,0 +1,21 @@
+name: Reproduction question
+description: Report a command or numerical result that needs investigation.
+body:
+  - type: textarea
+    attributes:
+      label: Command and expected result
+      description: Paste the exact command and the paper result or artifact being checked.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Runtime
+      description: Python, PyTorch, OS, CPU/GPU, and release version.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Generated report and observed behavior
+      description: Include report.json or verification.json, after removing private paths.
+    validations:
+      required: true

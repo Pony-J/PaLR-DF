@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "palr-df"
+version = "0.1.0"
+description = "Persistence-augmented low-rank direct forecasting for satellite clock bias"
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+license = {text = "MIT"}
+authors = [
+  {name = "Yuanjin Bao"},
+  {name = "Jifei Tang"},
+  {name = "Lanhua Xia"},
+]
+dependencies = ["numpy>=1.26,<3", "pandas>=2.2,<3", "torch>=2.5,<2.6", "matplotlib>=3.9,<3.11"]
+
+[project.scripts]
+palr-df = "palr_df.cli:main"
+
+[tool.setuptools]
+license-files = ["LICENSE", "NOTICE", "licenses/Time-Series-Library.txt"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
