@@ -19,6 +19,12 @@ dependencies = ["numpy>=1.26,<3", "pandas>=2.2,<3", "torch>=2.5,<2.6", "matplotl
 [project.scripts]
 palr-df = "palr_df.cli:main"
 
+[project.urls]
+Repository = "https://github.com/Pony-J/PaLR-DF"
+Documentation = "https://github.com/Pony-J/PaLR-DF/blob/main/docs/reproduction.md"
+Issues = "https://github.com/Pony-J/PaLR-DF/issues"
+Artifacts = "https://github.com/Pony-J/PaLR-DF/releases/tag/v0.1.0"
+
 [tool.setuptools]
 license-files = ["LICENSE", "NOTICE", "licenses/Time-Series-Library.txt"]
 

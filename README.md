@@ -26,6 +26,8 @@ This repository covers the first paper's core method, spectra, rank intervention
 Use Python 3.11. From the repository root:
 
 ```bash
+git clone https://github.com/Pony-J/PaLR-DF.git
+cd PaLR-DF
 python -m venv .venv
 # Linux/macOS: source .venv/bin/activate
 # Windows PowerShell: .venv\Scripts\Activate.ps1
@@ -42,7 +44,7 @@ The last three commands use the small source repository only. `verify-results` c
 
 ### Replay a pretrained model
 
-Use the matching `PaLR-DF-v0.1.0-assets.zip`, supplied alongside the source archive and intended for the **v0.1.0 GitHub Release**. Verify its checksum against `RELEASE_SHA256SUMS.txt`, and extract it in the repository root. The resulting directory should be `artifacts/`, containing `data/`, `checkpoints/`, `configs/`, and `manifest.json`.
+Download the matching [PaLR-DF-v0.1.0-assets.zip](https://github.com/Pony-J/PaLR-DF/releases/download/v0.1.0/PaLR-DF-v0.1.0-assets.zip) from the [v0.1.0 release](https://github.com/Pony-J/PaLR-DF/releases/tag/v0.1.0). Verify its checksum against [RELEASE_SHA256SUMS.txt](https://github.com/Pony-J/PaLR-DF/releases/download/v0.1.0/RELEASE_SHA256SUMS.txt), and extract it in the repository root. The resulting directory should be `artifacts/`, containing `data/`, `checkpoints/`, `configs/`, and `manifest.json`.
 
 ```bash
 palr-df verify-assets --assets artifacts

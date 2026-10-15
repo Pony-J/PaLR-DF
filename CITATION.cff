@@ -3,6 +3,7 @@ message: "Please cite the accompanying manuscript and credit CODE/IGS data provi
 type: software
 title: "PaLR-DF: Persistence-augmented low-rank direct forecasting"
 version: 0.1.0
+repository-code: "https://github.com/Pony-J/PaLR-DF"
 date-released: 2026-10-13
 license: MIT
 authors:
