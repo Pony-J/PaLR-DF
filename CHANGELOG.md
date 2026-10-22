@@ -3,6 +3,7 @@
 ## 0.1.1 — 2026-10-22
 
 - Add a review guide mapping the submitted paper's core figures and tables to data and commands.
+- Replace the earlier overview with the submitted Fig. 1, extracted without redrawing.
 - Regenerate all seven result figures from frozen records, using manuscript display names and the single-panel Fig. 9.
 - Preserve original manuscript plot PNGs; add manuscript-name and satellite-quantile CSV exports.
 - Keep frozen numerical records, model weights, configs and v0.1.0 asset checksums unchanged.

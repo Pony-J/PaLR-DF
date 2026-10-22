@@ -3,6 +3,7 @@
 Source and presentation update aligned with the October 22, 2026 manuscript submission.
 
 - Add a paper-to-artifact [review guide](https://github.com/Pony-J/PaLR-DF/blob/v0.1.1/docs/reviewer_guide.md).
+- Use the original submitted overview diagram, extracted without redrawing.
 - Regenerate all seven result figures from the frozen data, using the manuscript's Informer display name and single-panel Fig. 9.
 - Retain original manuscript plot PNGs and add manuscript-name / satellite-quantile table exports.
 - Fix handling of parent segments in Windows asset paths, with a regression check for containment.

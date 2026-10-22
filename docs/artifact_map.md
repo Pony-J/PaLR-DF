@@ -11,7 +11,7 @@ For figure/table numbers in the October 22 submission and a short verification r
 | Accuracy–parameter tradeoff | `complexity_points.csv`, parameter counts and comparison records | `figures`; model parameter counts checked in CPU tests |
 | Paired satellite comparisons | Frozen paired statistics and satellite differences, with all satellites retained | Source records for inspection; aggregates rebuilt from `comparison.csv` |
 | C41 diagnostic | Frozen daily and satellite-level records | Included as historical first-paper data |
-| Original research-logic overview | `docs/assets/research_overview.png` | Original manuscript image retained |
+| Original research-logic overview | `docs/assets/research_overview.jpeg` | Extracted unchanged from Fig. 1 of the submitted manuscript |
 
 The release focuses on the core first-paper contribution. It includes selected comparison-adapter code and configs; pretrained comparator and rank-sweep weights, every reference-policy branch, and auxiliary appendix experiments are outside this model zoo. The frozen tables clearly retain all selected experiments' satellites and available seeds.
 

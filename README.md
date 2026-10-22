@@ -12,7 +12,7 @@ The current source is **v0.1.1**, aligned with the October 22 submission. It use
 
 [Review guide](docs/reviewer_guide.md) · [Quick start](#quick-start) · [Results](#paper-results) · [Reproduction](docs/reproduction.md) · [Protocol](docs/protocol.md) · [中文指南](docs/README_zh.md)
 
-<img src="docs/assets/research_overview.png" alt="Research sequence from full-resolution forecasting to spectral diagnosis, rank intervention and compact decoding" width="100%">
+<img src="docs/assets/research_overview.jpeg" alt="Original submitted manuscript overview: forecasting requirement, mapping redundancy and PaLR-DF" width="100%">
 
 ## What this release provides
 

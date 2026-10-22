@@ -28,6 +28,7 @@ The asset verifier checks 582 files, including all 560 PaLR-DF/V2 checkpoints. C
 
 | Submitted paper | Released evidence | Verification |
 |---|---|---|
+| Fig. 1: research overview | `docs/assets/research_overview.jpeg` | Original submitted image extracted without redrawing |
 | Table I; architecture and parameter formula | `src/palr_df/model.py`, `configs/palr_12h.json`, `configs/palr_24h.json` | CPU tests; `train`; strict checkpoint replay |
 | Figs. 2 and 5: ordinary/context/task-weighted spectra | `results/frozen/spectra.csv`; V2 and PaLR-DF weights | `verify-results`, `spectrum`, `figures` |
 | Fig. 6: decoder-rank intervention | `rank_intervention.csv`, `rank_reference_3seed.csv`, `rank_reference_5seed.csv` | `verify-results`, `figures`; `train --rank` for fresh runs |
