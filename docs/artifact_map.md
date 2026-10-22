@@ -1,5 +1,7 @@
 # Paper-to-artifact map
 
+For figure/table numbers in the October 22 submission and a short verification route, see the [review guide](reviewer_guide.md).
+
 | Paper content | Included evidence | Verification |
 |---|---|---|
 | PaLR-DF architecture and rank-3 decoder | `src/palr_df/model.py`, configs, all 280 PaLR-DF weights | `evaluate`, `train`; strict state loading and archived-forward parity checked for release |
@@ -16,3 +18,5 @@ The release focuses on the core first-paper contribution. It includes selected c
 `results/frozen_manifest.json` records source-controlled frozen file hashes. `results/frozen/assets_manifest.json` is the source-controlled trust anchor for the external data/checkpoint package. The checkpoint index retains original checkpoint and config hashes. Local machine paths are removed from the public package; logical asset paths replace them without changing checkpoint bytes or numerical records.
 
 Reference aggregation values were exported independently from the manuscript's archived statistics and completed 24 h comparison table. The release verifier rebuilds them from the underlying satellite/seed rows. It also checks rank-intervention summaries against the independent archived three- and five-seed tables.
+
+`figures` regenerates Figs. 2, 5–10, including the current single-panel Fig. 9, from these frozen files. Manuscript display names are applied at presentation time; the source records, model identifiers and hashes retain their release values.

@@ -42,6 +42,6 @@ The full sweep uses ranks 2, 3, 4, 6, 8, 12 and seeds 2024–2026. Five-seed con
 
 ## Comparison implementations
 
-`baselines.py` contains the local direct-forecasting adapters actually used for these results. CNN-D, LSTM-D and LSTM-ATT-D operate on the last 240 input samples. Informer-D uses convolutional tokenization and distilled Transformer encoding. SSA-TCN-D uses centered smoothing bands with three TCN branches. MGAMNet follows a multigranularity patch/mixing/attention hierarchy. The last three are **local adaptations**, and their result labels should retain that qualification when comparisons are reused.
+`baselines.py` contains the local direct-forecasting adapters actually used for these results. CNN-D, LSTM-D and LSTM-ATT-D operate on the last 240 input samples. Informer (archived identifier `Informer-D`) uses convolutional tokenization and distilled Transformer encoding. SSA-TCN-D uses centered smoothing bands with three TCN branches. MGAMNet follows a multigranularity patch/mixing/attention hierarchy. The last three are **local adaptations**; reused comparisons should retain these implementation details alongside the manuscript display names.
 
 INT-Best denotes the frozen satellite-specific reference-selection policy from the manuscript. Its complete comparison records are included; the focused model zoo contains PaLR-DF and V2. The release does not claim to include every reference-policy branch or pretrained baseline checkpoint.

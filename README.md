@@ -8,7 +8,9 @@
 
 Code and reproducibility artifacts for **Long-Horizon Satellite Clock Bias Prediction: From Mapping Redundancy to Low-Rank Decoding**, by Yuanjin Bao, Jifei Tang, and Lanhua Xia (2026 manuscript).
 
-[Quick start](#quick-start) · [Results](#paper-results) · [Reproduction](docs/reproduction.md) · [Protocol](docs/protocol.md) · [中文指南](docs/README_zh.md)
+The current source is **v0.1.1**, aligned with the October 22 submission. It uses the unchanged **v0.1.0 data/checkpoint archive** linked below.
+
+[Review guide](docs/reviewer_guide.md) · [Quick start](#quick-start) · [Results](#paper-results) · [Reproduction](docs/reproduction.md) · [Protocol](docs/protocol.md) · [中文指南](docs/README_zh.md)
 
 <img src="docs/assets/research_overview.png" alt="Research sequence from full-resolution forecasting to spectral diagnosis, rank intervention and compact decoding" width="100%">
 
@@ -19,7 +21,7 @@ Code and reproducibility artifacts for **Long-Horizon Satellite Clock Bias Predi
 - **Controlled rank interventions:** complete satellite/seed records show the low-rank accuracy plateau, with separate three-seed sweeps and five-seed representative configurations.
 - **Auditable artifacts:** 2,520 comparison records, 1,400 rank-intervention records, 560 spectral records, and 560 pretrained PaLR-DF/V2 checkpoints, with SHA-256 manifests.
 
-This repository covers the first paper's core method, spectra, rank interventions and comparison results. See the [paper-to-artifact map](docs/artifact_map.md) for the exact scope of each verification command.
+This repository covers the first paper's core method, spectra, rank interventions and comparison results. The [review guide](docs/reviewer_guide.md) maps the submitted paper to the released evidence and verification commands. See the [paper-to-artifact map](docs/artifact_map.md) for the exact scope of each verification command.
 
 ## Quick start
 
@@ -40,7 +42,7 @@ palr-df verify-results --output runs/tables
 palr-df figures --output runs/figures
 ```
 
-The last three commands use the small source repository only. `verify-results` checks the complete satellite/seed grids, verifies artifact hashes, and rebuilds paper aggregates. It writes a machine-readable verification report and CSV tables. `figures` regenerates three main result plots as PNG and PDF using portable fonts.
+The last three commands use the small source repository only. `verify-results` checks the complete satellite/seed grids, verifies artifact hashes, and rebuilds paper aggregates. It writes a machine-readable verification report and CSV tables. `figures` regenerates all seven result plots (Figs. 2, 5–10) as PNG, PDF and SVG using portable fonts.
 
 ### Replay a pretrained model
 
@@ -64,15 +66,15 @@ Macro RMSE in ns, mean ± **sample standard deviation of the five seed-level sat
 |---|---:|---:|
 | **PaLR-DF (r = 3)** | **0.585411 ± 0.005251** | **1.102947 ± 0.009901** |
 | V2 reference | 0.587716 ± 0.004631 | 1.103825 ± 0.008798 |
-| SSA-TCN-D adaptation | 0.625936 ± 0.008858 | 1.179606 ± 0.014797 |
-| MGAMNet adaptation | 0.648511 ± 0.008843 | 1.212626 ± 0.022446 |
-| Informer-D adaptation | 0.703710 ± 0.023404 | 1.286271 ± 0.035305 |
+| SSA-TCN-D | 0.625936 ± 0.008858 | 1.179606 ± 0.014797 |
+| MGAMNet | 0.648511 ± 0.008843 | 1.212626 ± 0.022446 |
+| Informer | 0.703710 ± 0.023404 | 1.286271 ± 0.035305 |
 | LSTM-D | 0.826926 ± 0.002054 | 1.653273 ± 0.005686 |
 | LSTM-ATT-D | 0.827039 ± 0.002414 | 1.654070 ± 0.006705 |
 | CNN-D | 0.829864 ± 0.006321 | 1.689775 ± 0.008989 |
 | INT-Best reference policy | 0.549133 ± 0.005674 | 0.983616 ± 0.006414 |
 
-PaLR-DF reduces macro RMSE by **6.47% / 6.50%** relative to the evaluated SSA-TCN-D adaptation for 12 h / 24 h, using **33,019 vs. 973,632 parameters** for 12 h. INT-Best is a frozen reference policy with satellite-specific choices; its comparison records are included in full. Baseline names identify the local direct-forecasting implementations used in the manuscript; [implementation details](docs/protocol.md#comparison-implementations) distinguish them from upstream author code.
+PaLR-DF reduces macro RMSE by **6.47% / 6.50%** relative to the evaluated SSA-TCN-D implementation for 12 h / 24 h, using **33,019 vs. 973,632 parameters** for 12 h. INT-Best is a frozen reference policy with satellite-specific choices; its comparison records are included in full. Display names follow the submitted manuscript; archived CSV identifiers are preserved for hash compatibility. Baseline names identify the local direct-forecasting implementations used in the manuscript; [implementation details](docs/protocol.md#comparison-implementations) distinguish them from upstream author code.
 
 <img src="docs/assets/02_weighted_ranks.png" alt="Ordinary, context-weighted and task-weighted effective ranks for the full checkpoint set" width="100%">
 

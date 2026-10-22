@@ -2,6 +2,8 @@
 
 本仓库只包括第一篇论文的核心内容：PaLR-DF、任务加权谱诊断、秩干预与比较结果。论文标题为 **Long-Horizon Satellite Clock Bias Prediction: From Mapping Redundancy to Low-Rank Decoding**。
 
+与 2026 年 10 月 22 日投稿版本对应的图表编号、文件和验证命令见 [审阅指南](reviewer_guide.md)。页面及图片使用论文中的 Informer 名称，冻结 CSV 内保留原 `Informer-D` 标识及哈希。
+
 ## 先验证表格和图片
 
 按首页安装 Python 3.11 环境和依赖，在仓库根目录运行：
@@ -12,7 +14,7 @@ palr-df verify-results --output runs/tables
 palr-df figures --output runs/figures
 ```
 
-这部分不需要下载权重。程序核对文件哈希、完整星集、种子、窗口数量，然后重算论文的比较表、三种子／五种子秩干预表和谱中位数。`verification.json` 中 `passed` 应为 `true`。图片会同时生成 PNG 和 PDF，字体采用跨平台配置。
+这部分不需要下载权重。程序核对文件哈希、完整星集、种子、窗口数量，然后重算论文的比较表、三种子／五种子秩干预表和谱中位数。`verification.json` 中 `passed` 应为 `true`。图片会同时生成 PNG、PDF 和 SVG，对应论文图 2、5–10，字体采用跨平台配置。
 
 ## 再验证程序、数据和权重
 

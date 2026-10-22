@@ -2,6 +2,7 @@
 from __future__ import annotations
 import hashlib
 import json
+import os
 from pathlib import Path
 
 
@@ -24,8 +25,10 @@ def write_json(path, value):
 
 
 def safe_path(root, relative):
-    root = Path(root).resolve()
-    path = (root / relative).resolve()
+    # Normalize parent segments as well as symlinks. Some Windows filesystem
+    # providers return a resolved directory spelling that still contains '..'.
+    root = Path(os.path.abspath(Path(root).resolve()))
+    path = Path(os.path.abspath((root / relative).resolve()))
     if not path.is_relative_to(root):
         raise ValueError(f"Artifact path escapes its root: {relative}")
     return path

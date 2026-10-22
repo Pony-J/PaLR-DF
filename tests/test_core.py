@@ -128,6 +128,16 @@ class EvaluationTests(unittest.TestCase):
 
 
 class IntegrityTests(unittest.TestCase):
+    def test_parent_segments_in_asset_root(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            folder = Path(tmp)
+            (folder / "nested").mkdir()
+            asset = folder / "value.bin"
+            asset.write_bytes(b"ok")
+            self.assertEqual(safe_path(folder / "nested" / "..", "value.bin"), asset.resolve())
+            with self.assertRaises(ValueError):
+                safe_path(folder / "nested" / "..", "../outside.bin")
+
     def test_tampered_asset_and_path_escape_rejected(self):
         with tempfile.TemporaryDirectory() as tmp:
             folder = Path(tmp)

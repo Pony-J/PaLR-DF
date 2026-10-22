@@ -73,4 +73,4 @@ The fresh-training output includes `model.pt`, `config.json`, `history.json` and
 
 The tested scientific dependencies are pinned in `requirements.txt`. Python 3.11 is recommended; the source package declares Python 3.10–3.12. Source-only checks take seconds, and complete checkpoint replay is practical on CPU. GPU training is optional; use a PyTorch 2.5.1 CUDA build compatible with your system and pass `--device cuda`. Full training costs depend on the model, satellite and early-stopping epoch.
 
-The release validation records measured wall time and numerical errors in [validation.json](../results/validation.json). CI runs the CPU mathematical/data checks, verifies frozen aggregates and regenerates the three plots without downloading large assets.
+The release validation records measured wall time and numerical errors in [validation.json](../results/validation.json). CI runs the CPU mathematical/data checks, verifies frozen aggregates and regenerates the seven result plots without downloading large assets.

@@ -6,6 +6,9 @@ import pandas as pd
 from .io import read_json, verify_manifest, write_json
 
 
+PAPER_NAMES = {"Informer-D": "Informer"}
+
+
 def checked_records(frame, group_columns, satellites, seeds):
     keys = group_columns + ["satellite", "seed"]
     if frame.duplicated(keys).any() or not np.isfinite(frame["rmse_ns"]).all():
@@ -80,6 +83,17 @@ def verify_results(repo, output):
     if not np.array_equal(v2.loc[["12h", "24h"], "raw_r95"], [2, 1.5]) or not (v2.task_r95 == 1).all():
         raise ValueError("Paper spectral medians mismatch")
     table.to_csv(output / "comparison.csv", index=False)
+    display = table.copy()
+    display["model"] = display["model"].replace(PAPER_NAMES)
+    display.to_csv(output / "comparison_paper_names.csv", index=False)
+    # Table III uses seed-averaged satellite scores, rather than pooled windows.
+    satellite_means = records.groupby(["horizon", "model", "satellite"])["rmse_ns"].mean()
+    distribution = satellite_means.groupby(["horizon", "model"]).agg(
+        median_ns="median", p90_ns=lambda x: x.quantile(.90),
+        p95_ns=lambda x: x.quantile(.95), worst_ns="max",
+    ).reset_index()
+    distribution["model"] = distribution["model"].replace(PAPER_NAMES)
+    distribution.to_csv(output / "comparison_distribution.csv", index=False)
     seed_macro.to_csv(output / "comparison_seed_macro.csv", index=False)
     spectral_summary.to_csv(output / "spectral_medians.csv", index=False)
     report = {"passed": True, **integrity, "comparison_rows": len(records), "rank_rows": len(ranks), "spectral_rows": len(spectra), "max_reference_error_ns": max_error, "satellite_count": 28, "seeds": provenance["seeds"]}
@@ -88,50 +102,5 @@ def verify_results(repo, output):
 
 
 def figures(repo, output):
-    import matplotlib
-    matplotlib.use("Agg")
-    import matplotlib.pyplot as plt
-    repo, output = Path(repo), Path(output)
-    output.mkdir(parents=True, exist_ok=True)
-    frozen = repo / "results/frozen"
-    plt.rcParams.update({"font.family": "DejaVu Sans", "font.size": 10, "axes.spines.top": False, "axes.spines.right": False, "savefig.bbox": "tight"})
-    spectra = pd.read_csv(frozen / "spectra.csv")
-    fig, axes = plt.subplots(1, 2, figsize=(9, 3.5))
-    for ax, horizon in zip(axes, ("12h", "24h")):
-        group = spectra[(spectra.horizon == horizon) & (spectra.model == "V2")]
-        for x, (field, label, color) in enumerate(zip(("raw_r95", "context_r95", "task_r95"), ("Ordinary", "Context", "Task"), ("#25689A", "#C56F2C", "#26806A"))):
-            # Deterministic horizontal spacing is solely for coincident point visibility.
-            values = group[field].to_numpy()
-            offsets = np.linspace(-.18, .18, len(values))
-            ax.scatter(x + offsets, values, s=11, alpha=.35, color=color)
-            ax.plot([x - .22, x + .22], [np.median(values)] * 2, color="black", lw=2)
-        ax.set(xticks=range(3), xticklabels=["Ordinary", "Context", "Task"], ylabel="95%-energy effective rank", title=f"{horizon}: 140 V2 checkpoints", ylim=(0, max(group.raw_r95) + 1))
-    fig.tight_layout()
-    fig.savefig(output / "weighted_ranks.png", dpi=200)
-    fig.savefig(output / "weighted_ranks.pdf")
-    plt.close(fig)
-    ranks = pd.read_csv(frozen / "rank_intervention.csv")
-    fig, axes = plt.subplots(1, 2, figsize=(9, 3.5))
-    for ax, horizon in zip(axes, ("12h", "24h")):
-        for n, style, color in ((3, "o--", "#8A98A6"), (5, "s-", "#25689A")):
-            sub = rank_summary(ranks, list(range(2024, 2024 + n)))
-            sub = sub[sub.horizon == horizon]
-            ax.errorbar(sub["rank"], sub.macro_rmse_ns, yerr=sub.sample_sd_ns, fmt=style, color=color, capsize=3, label=f"{n} seeds")
-        ax.set(title=horizon, xlabel="Residual basis rank", ylabel="Macro RMSE (ns)", xticks=[2, 3, 4, 6, 8, 12])
-        ax.legend(frameon=False)
-    fig.tight_layout()
-    fig.savefig(output / "rank_intervention.png", dpi=200)
-    fig.savefig(output / "rank_intervention.pdf")
-    plt.close(fig)
-    complexity = pd.read_csv(frozen / "complexity_points.csv")
-    fig, ax = plt.subplots(figsize=(7, 4))
-    offsets = {"r=2": (-12, -22), "r=3": (2, 20), "r=6": (16, 2), "r=12": (4, -18), "LSTM-ATT-D": (-34, 13), "LSTM-D": (5, -17), "INT-Best": (8, 3)}
-    for row in complexity.itertuples():
-        ax.scatter(row.parameters, row.macro_rmse_ns, c=row.color, s=40)
-        ax.annotate(row.model, (row.parameters, row.macro_rmse_ns), xytext=offsets.get(row.model, (5, 6)), textcoords="offset points", fontsize=8)
-    ax.set(xscale="log", xlabel="Parameters (log scale)", ylabel="12 h macro RMSE (ns)")
-    fig.tight_layout()
-    fig.savefig(output / "accuracy_complexity.png", dpi=200)
-    fig.savefig(output / "accuracy_complexity.pdf")
-    plt.close(fig)
-    return {"figure_count": 3, "formats": ["png", "pdf"]}
+    from .plotting import figures as render_figures
+    return render_figures(repo, output)

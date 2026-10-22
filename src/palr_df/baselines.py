@@ -1,6 +1,6 @@
 """Local direct-forecasting comparison adapters used in the first paper.
 
-Informer-D, SSA-TCN-D and MGAMNet are adaptations; see docs/protocol.md.
+Informer, SSA-TCN-D and MGAMNet are local implementations; see docs/protocol.md.
 """
 from __future__ import annotations
 import torch
